@@ -9,10 +9,16 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(string) {
   let output = {};
-  for (let i = 0; i < string.length; i++) {
-    
+  for (letter of string) {
+    if (letter !== ' ') {
+      if (output[letter]) {
+        output[letter] += 1;
+      } else {
+        output[letter] = 1;
+      }
+    }
   }
   return output;
-}
+};
 
 console.log(countLetters('hello'));
