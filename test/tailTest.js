@@ -1,6 +1,10 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+
+describe('#tail', () => {
+  it(`should return the given array, but with its first element removed`, () => {
+    const arr = ["Yo Yo", "Lighthouse", "Labs"];
+    assert.deepEqual(tail(arr), ["Lighthouse", "Labs"])
+  });
+});
