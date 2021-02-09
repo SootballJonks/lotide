@@ -1,6 +1,6 @@
 {
   "name": "@sootball/lotide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lodash, but worse.",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -22,8 +22,5 @@
   "devDependencies": {
     "chai": "^4.3.0",
     "mocha": "^8.2.1"
-  },
-  "dependencies": {
-    "my-package": "^0.0.0"
   }
 }
